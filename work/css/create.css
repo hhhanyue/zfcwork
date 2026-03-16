@@ -1,0 +1,48 @@
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.da{
+		height:400px;
+		width: 450px;
+		border-radius: 50%;
+		border:5px solid black;
+		padding: 50px;
+		background-image: repeating-radial-gradient(circle at 50% 50%,lightblue,lightgreen 5%);
+		margin: 100px auto;
+	}
+	.sheet{
+		width: 348px;
+		height: 350px;
+		border: 3px solid black;
+		margin: 20px auto;
+		border-radius: 15px;
+		box-shadow: 12px 15px 12px black;
+		background-color: white;
+	}		
+	.sheet p{
+		margin: 0;
+		width: 348px;
+		height: 53px;
+		margin-bottom: 2px;
+		/* border-top: 2px; */
+		background-color: gray;
+		text-align: center;
+		font-size: 20px;
+		line-height: 53px;
+		font-family:"微软雅黑";
+	}
+	.sheet .tp{
+		width: 348px;
+		height: 186px;
+		background-color: white;
+		background-image:url("../img/shine1.png"),url("../img/shine2.png"),url("../img/createimg.png");
+		border-radius: 12px 12px 0px 0px;
+		background-repeat:no-repeat;
+		background-position: 0px 0px 25% 25% 75% 75%;
+	}
+	.sheet .dx{
+		border-radius: 0px 0px 12px 12px;
+	}
+</style>

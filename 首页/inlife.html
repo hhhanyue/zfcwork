@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/leader.css">
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			.name{
+				font-size: 28px;
+				width: 200px;
+				height: 40px;
+				border: 0px solid black;
+				margin-left: 100px;
+				font-family: "华文新魏";
+				padding-top: 4px;
+				text-align: center;
+				float: left;
+			}
+			.jiaru{
+				font-size: 28px;
+				width: 200px;
+				height: 40px;
+				border: 0px solid black;
+				margin-left: 100px;
+				padding-top: 4px;
+				text-align: center;
+				float: left;
+				margin-left:1100px ;
+				}
+			#search{
+				width: 100%;
+				height: 40px;
+				border: 0px solid black;
+				background-color: rgba(255, 255, 255, 1.0);
+				}
+			#leader{
+				width: 100%;
+				height: 40px;
+				border: 0px solid black;
+				background-color: rgba(240, 240, 240, 1.0);
+				border-bottom: 1px solid #787878;
+			}
+			#leader_left{
+				margin-left: 400px;
+				}
+			ul li a{
+				margin-top: -4px;
+				margin-left: 10px;
+				width: 200px;
+				height: 36px;
+				padding-top: 7px;
+				border: 0px solid black;
+				float: left;
+				background-color: rgba(255,255,255,0);
+				line-height: 30px;
+				text-align: center;
+				font-size: 20px;
+				}
+			ul li a:link{
+				color: black;
+				text-decoration: none;
+				}
+			ul li a:hover{
+				background-color: rgba(255, 255, 255, 50%);
+				text-decoration: none;
+				}
+			ul li a:visited{
+				color: black;
+				text-decoration: none;
+				}
+			h6 a:link{
+				color: black;
+				text-decoration: none;
+				font-size: 25px;
+				font-family: "微软雅黑";
+				}
+			h6 a:hover{
+				color: blue;
+				text-decoration: none;
+				font-size: 25px;
+				font-family: "微软雅黑";
+			}
+			h6 a:visited{
+				color: black;
+				text-decoration: none;
+				font-size: 25px;
+				font-family: "微软雅黑";
+				}
+			#easy{
+				width: 1204px;
+				height: 90px;
+				border: 3px solid black;
+				margin: 0 auto;
+				margin-top: 30px;
+				border-left: 0;
+				border-right: 0;
+			}
+			#neirong{
+				width: 1059px;
+				height: 1200px;
+				border: 0px solid black;
+				margin: 0 auto;
+				margin-top: 10px;
+				background-color: rgba(226, 245, 245, 1.0);
+			}
+			.neirongs{
+				width: 900px;
+				height: 300px;
+				border: 0px solid black;
+				margin: 0 auto;
+				/* margin-top: 20px; */
+				background-color: rgba(226, 245, 245, 1.0);
+
+			}
+			.neirongs_left_1,.neirongs_left_2,.neirongs_left_3,.neirongs_left_4{
+				width: 400px;
+				height: 276px;
+				border: 0px solid black;
+				margin-left:20px ;
+				margin-top: 12px;
+				float: left;
+			}
+			.neirongs_left_1{
+				width: 460px;
+				overflow: hidden;
+			}
+			.neirongs_left_2{
+				margin-left: 10px;
+				float: right;
+				margin-right: 11px;
+				overflow: hidden;
+			}
+			.neirongs_left_3{
+				width: 460px;
+				overflow: hidden;
+			}
+			.neirongs_left_4{
+				float: right;
+				margin-right: 20px;
+				margin-left: 0;
+				overflow: hidden;
+			}
+			
+			.neirongs_left_1 img:hover{
+				transform: scale(1.2,1.2);
+				transform-origin: center center;
+				transition-duration: 2s;
+			
+			}
+			.neirongs_left_2 img:hover{
+				transform: scale(1.2,1.2);
+				transform-origin: center center;
+				transition-duration: 2s;
+			}
+			.neirongs_left_3 img:hover{
+				transform: scale(1.2,1.2);
+				transform-origin: center center;
+				transition-duration: 2s;
+			}
+			.neirongs_left_4 img:hover{
+				transform: scale(1.2,1.2);
+				transform-origin: center center;
+				transition-duration: 2s;
+			}
+			
+			.neirongs_right_1,.neirongs_right_2,.neirongs_right_3,.neirongs_right_4{
+				width: 350px;
+				margin-left:0px;
+				height: 276px;
+				border: 0px solid black;
+				margin-top: 12px;
+				float: left;
+			}
+			.neirongs_right_1{
+				margin-left: 10px;
+				width:385px;
+				
+			}
+			.neirongs_right_2{
+				width: 460px;
+				height: 276px;
+				margin-left: 15px;
+				float: right;
+			}
+			.neirongs_right_3{
+				margin-left: 10px;
+				width: 385px;
+			}
+			.neirongs_right_4{
+				float: right;
+				margin-right: 10px;
+				width: 460px;
+				height: 276px;
+			}
+			.neirongs_right_shang_1,.neirongs_right_shang_2,.neirongs_right_shang_3,.neirongs_right_shang_4{
+				width: 350px;
+				height: 60px;
+				border: 0px solid black;
+				
+			}
+			.neirongs_right_shang_1{
+				width: 385px;
+				font-size: 22px;
+				text-align: center;
+				line-height: 60px;
+				background-color: rgba(6, 160, 255, 0.8);
+			}
+			.neirongs_right_shang_2{
+				width: 60px;
+				height: 247px;
+				margin-right: 0px;
+				float: right;
+				text-align: center;
+				font-size: 22px;
+				padding-top: 29px;
+				background-color: rgba(6, 160, 255, 0.8);
+			}
+			.neirongs_right_shang_3{
+				width: 385px;
+				height: 196px;
+				background-image: url("img/backxia1.png");
+			}
+			.neirongs_right_shang_4{
+				width: 60px;
+				height: 249px;
+				float: left;
+				margin-left: 10px;
+				font-size: 22px;
+				text-align: center;
+				padding-top: 27px;
+				background-color: rgba(6, 160, 255, 0.8);
+			}
+			.neirongs_right_xia_1,.neirongs_right_xia_2,.neirongs_right_xia_3,.neirongs_right_xia_4{
+				width: 350px;
+				height: 196px;
+				border: 0px solid black;
+				margin-top: 19px;
+				
+			}
+			.neirongs_right_xia_1{
+				width: 385px;
+				background-image: url("img/backxia1.png");
+			}
+			.neirongs_right_xia_2{
+				float: right;
+				width: 376px;
+				height: 256px;
+				margin: 0;
+				margin-right: 10px;
+				padding-top: 20px;
+				background-image: url("img/backxia1.png");
+			}
+			.neirongs_right_xia_3{
+				width: 385px;
+				height: 60px;
+				font-size: 22px;
+				line-height: 60px;
+				text-align: center;
+				background-color: rgba(6, 160, 255, 0.8);
+			}
+			.neirongs_right_xia_4{
+				width: 376px;
+				height: 226px;
+				float: left;
+				margin: 0;
+				margin-left: 10px;
+				padding-top: 50px;
+				background-image: url("img/backxia1.png");
+			}
+		</style>
+		<link rel="stylesheet" href="css/end.css">
+	</head>
+	<body>
+		<div id="search">
+			<p class="name">生活中的创新</p>
+			<h6><a href="zuce.html" class="jiaru">加入我们</a></h6>
+		</div>
+		<div class="img">
+			<ul id="leader">
+				<li id="leader_left"><a href="shouye.html">首页</a></li>
+				<li><a href="">生活中的创新</a></li>
+				<li><a href="howto.html">我们如何创新</a></li>
+				<li><a href="result.html">创新作品</a></li>
+			</ul>		
+		</div>
+		<div id="easy">
+			<p><strong>创新无处不在，不仅仅指高科技，日常生活中的小发明、小创造，乃至好的制造等都是创新。我们可以从生活中的很多小事情中发现创新的身影。例如，一款方便携带的便当盒、一款更耐用的儿童玩具、可以节约水资源的淋浴喷头等等，这些都是来自于人们对生活的理解和改善所做出的努力。创新并不一定
+			要涉及高科技，每一个人都有想法和创意的潜力，只要我们愿意去思考、去实践，就能做出让生活更美好的贡献
+			。同时，好的制造和生产也可以是创新的一部分。通过优化工艺流程、提高生产效率、减少废品等方式，可以更
+			好地满足市场需求，降低成本，提高质量，为企业和消费者带来更多的价值。</strong></p>
+		</div>
+		<div id="neirong">
+			<ul class="neirongs">
+				<li class="neirongs_left_1"><img src="img/highway.png" alt=""></li>
+				<li>
+					<ul class="neirongs_right_1">
+						<li class="neirongs_right_shang_1"><strong>创新带来出行便利</strong></li>
+						<li class="neirongs_right_xia_1">科技的发展和社会的进步，让我们的出行方式发生了巨大的变化。
+现在，我们可以享受各种交通工具，从自行车到飞机，从共享单车到网约车，每一种都是创新的产物，都能满足我们不同的出行需求和喜好。
+同时，我们可以享受更智能的出行服务，通过手机、电脑等设备，我们可以随时随地查询路线、预订票务、支付费用、评价服务等，无需排队、等待、携带现金等繁琐的步骤。
+创新带来了出行便利，让我们的生活更加丰富多彩。</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="neirongs">
+				<li class="neirongs_left_2"><img src="img/shopping.jpg" alt=""></li>
+				<li>
+					<ul class="neirongs_right_2">
+						<li class="neirongs_right_shang_2"><strong>购<br>物<br>更<br>加<br>的<br>便<br>捷</strong></li>
+						<li class="neirongs_right_xia_2">随着互联网和电子商务的发展，人们的购物方式也发生了翻天覆地的变化。创新为我们提供了更多的选择和便利，让我们的购物更加快捷、安全、舒适和优惠。
+现在，我们可以通过手机、电脑等设备，随时随地浏览商品、比价、下单、支付、评价等，无需出门、排队、携带现金等繁琐的步骤。我们可以买到各种各样的商品，从日用品到奢侈品，从国内到国外，应有尽有。
+同时，我们可以享受更智能的购物服务，通过大数据、人工智能、区块链等技术，我们可以获得更精准的推荐、更优化的物流、更安全的交易等，提高购物的便捷性和安全性。</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="neirongs">
+				<li class="neirongs_left_3"><img src="img/chat.jpg" alt=""></li>
+				<li>
+					<ul class="neirongs_right_3">
+						<li class="neirongs_right_shang_3">创新是人类社会发展的动力，也是我们交流的桥梁。随着科技的进步，我们有了更多的方式和工具来传递信息，分享观点，表达情感。无论是电话，电子邮件，社交媒体，还是视频会议，都让我们能够跨越时空的障碍，与亲友，同事，合作伙伴保持联系。创新还促进了不同文化，语言，背景的人们之间的理解和沟通。通过翻译软件，搜索引擎，智能助理等，我们可以更容易地获取知识，学习技能，解决问题。创新使我们交流更通畅，也让我们的生活更丰富多彩。</li>
+						<li class="neirongs_right_xia_3"><strong>使我们交流更通畅</strong></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="neirongs">
+				<li class="neirongs_left_4"><img src="img/inspire.jpg" alt=""></li>
+				<li>
+					<ul class="neirongs_right_4">
+						<li class="neirongs_right_shang_4"><strong>激<br>发<br>人<br>们<br>的<br>活<br>力</strong></li>
+						<li class="neirongs_right_xia_4">创新是人类不断探索，进步，改变的表现，也是我们生活的动力。当我们面对新的挑战，机遇，需求时，我们会想出新的思路，方法，解决方案，来适应环境，提高效率，增加价值。创新让我们有了更多的选择，可能，创造。无论是在工作，学习，娱乐，还是生活中，我们都可以通过创新来提升自己，满足自己，实现自己。创新激发人们的活力，也让我们的世界更美好。</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="last">
+			<div id="end">
+				<p>copyright&copy;hanyue</p>
+				<p>地址：雷蒙德市 </p>
+				<p>邮箱：1216452716@qq.com</p>
+			</div>
+		</div>
+	</body>
+</html>
